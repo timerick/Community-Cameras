@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Creston Connection</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Creston Valley Cameras</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="cameraview.html">Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Weather</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Plane Tracker</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="container">
+      <div class="banner">
+        <img src="images/crestonvalleypanorama.jpg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <br>
+
+  <main>
+    <section class="rtsp-stream">
+      <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/nRyAHvZqiwg?&autoplay=1&amp;modestbranding=1&amp;rel=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section class="supported-by">
+      <div class="container">
+        <h2>Supported By</h2>
+        <div class="brand-logos d-flex flex-wrap justify-content-center">
+          <img src="images/reconnecttechlogo.png" alt="ReConnect Tech Inc.">
+          <img src="images/reconnecttechlogo.png" alt="Brand Logo 2">
+          <img src="images/reconnecttechlogo.png" alt="Brand Logo 3">
+          <img src="images/reconnecttechlogo.png" alt="Brand Logo 4">
+          <img src="images/reconnecttechlogo.png" alt="Brand Logo 5">
+        </div>
+      </div>
+    </section>
+  </main>
+  <br>
+  <br>
+  <footer>
+    Copyright ReConnect Tech Inc.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-flash/2.1.0/videojs-flash.min.js"></script>
+  <script>
+    videojs.options.flash.swf = "https://cdnjs.cloudflare.com/ajax/libs/videojs-flash/2.1.0/videojs-flash.swf";
+    var player = videojs('my-video');
+  </script>
+</body>
+
+</html>
