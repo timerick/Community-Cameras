@@ -32,7 +32,9 @@
   <header>
     <div class="container">
       <div class="banner">
-        <img src="images/crestonvalleypanorama.jpg" alt="">
+        <a href="https://reconnecttech.ca" id="imageLink">
+          <img id="image" src="images/bannerads/bannerAd1.png" alt="Image">
+        </a>
       </div>
     </div>
   </header>
@@ -60,10 +62,10 @@
           <a href="https://www.reconnecttech.ca/">
             <img src="images/reconnecttechlogo.png" alt="ReConnect Tech Inc.">
           </a>
-          <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 2">
+          <a><img src="images/logoads/logoAd1.png" alt="Brand Logo 2">
           </a>
-          <!-- <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 3"></a> -->
-          <!-- <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 4"></a> -->
+          <a><img src="images/logoads/logoAd2.png" alt="Brand Logo 3"></a>
+          <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 4"></a>
           <!-- <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 5"></a> -->
           <!-- <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 6"></a> -->
         </div>
@@ -81,9 +83,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-flash/2.1.0/videojs-flash.min.js"></script>
+
   <script>
     videojs.options.flash.swf = "https://cdnjs.cloudflare.com/ajax/libs/videojs-flash/2.1.0/videojs-flash.swf";
     var player = videojs('my-video');
+  </script>
+
+  <script type="text/javascript">
+    const imageLink = document.getElementById("imageLink");
+    const image = document.getElementById("image");
+    const images = [
+      { src: "images/bannerads/bannerAd2.png", link: "https://example.com/page1" },
+      { src: "images/bannerads/bannerAd1.png", link: "https://example.com/page2" },
+      { src: "images/bannerads/bannerAd2.png", link: "https://example.com/page3" }
+    ];
+    let i = 0;
+
+    function changeBannerAd() {
+      image.src = images[i].src;
+      imageLink.href = images[i].link;
+      i = (i + 1) % images.length;
+    }
+
+    setInterval(changeBannerAd, 5000);
+  </script>
   </script>
 </body>
 
