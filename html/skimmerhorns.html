@@ -45,7 +45,7 @@
   <header>
     <div class="container">
       <div class="banner mt-3">
-        <a href="advertise.html" id="imageLink">
+        <a href="https://reconnecttech.ca" id="imageLink">
           <img id="image" src="images/bannerads/bannerAd1.png" alt="Image">
         </a>
       </div>
@@ -58,34 +58,31 @@
     <section class="rtsp-stream">
       <div class="container">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="https://crestonvalleycameras.ca/restreamer/4a9a1819-83ee-42cf-bf2c-085300cdfe6a.html" width="640"
+          <iframe src="" width="640"
             height="360" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
         </div>
-      </div>
-      <div class="container">
       </div>
     </section>
     <br>
     <section class="supported-by">
       <div class="container">
-        <h3>Supported By</h3>
+        <h4>Supported By</h4>
         <div class="brand-logos">
-          <a><img src="images/logoads/hansonfarms.png" alt="Hanson Farms Ltd."></a>
-          <a href="https://www.lilyandaven.com/"><img src="images/logoads/lilyandaven.png" alt="Lily & Aven"></a>
           <a href="https://www.reconnecttech.ca/">
             <img src="images/reconnecttechlogo.png" alt="ReConnect Tech Inc.">
           </a>
-          <a href="advertise.html"><img src="images/logoads/logoad3.png" alt="Brand Logo 3"></a>
-          
-          <!--<a><img src="images/reconnecttechlogo.png" alt="Brand Logo 5"></a>
-          <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 6"></a> -->
+          <a><img src="images/logoads/logoAd1.png" alt="Brand Logo 2">
+          </a>
+          <a><img src="images/logoads/logoAd2.png" alt="Brand Logo 3"></a>
+          <a><img src="images/reconnectlogosolid.png" alt="Brand Logo 4"></a>
+          <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 5"></a>
+          <a><img src="images/reconnecttechlogo.png" alt="Brand Logo 6"></a>
         </div>
       </div>
     </section>
   </main>
   <br>
   <br>
-
   <div id="footer">
     <div class="container text-center">
       <p class="text-muted credit" style="color:#fff">&copy; 2023 ReConnect Tech Inc. – All rights reserved.</p>
@@ -107,9 +104,9 @@
     const imageLink = document.getElementById("imageLink");
     const image = document.getElementById("image");
     const images = [
-      { src: "images/bannerads/bannerAd2.png", link: "advertise.html" },
-      { src: "images/bannerads/bannerAd1.png", link: "advertise.html" },
-      { src: "images/bannerads/bannerAd2.png", link: "advertise.html" }
+      { src: "images/bannerads/bannerAd2.png", link: "https://example.com/page1" },
+      { src: "images/bannerads/bannerAd1.png", link: "https://example.com/page2" },
+      { src: "images/bannerads/bannerAd2.png", link: "https://example.com/page3" }
     ];
     let i = 0;
 
@@ -120,6 +117,7 @@
     }
 
     setInterval(changeBannerAd, 5000);
+  </script>
   </script>
 </body>
 
