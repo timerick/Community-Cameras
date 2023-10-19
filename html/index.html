@@ -19,6 +19,15 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        var cookieConsent = getCookie("cookieConsent");
+        if (cookieConsent) {
+            document.addEventListener("DOMContentLoaded", function() {
+                var cookiePopup = document.querySelector(".cookie-popup");
+                cookiePopup.style.display = "none";
+            });
+        }
+    </script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -30,7 +39,7 @@
 
     gtag('config', 'G-7CHERTRX0K');
 </script>
-<script src="scripts.js"></script>
+
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -147,6 +156,38 @@
         videojs.options.flash.swf = "https://cdnjs.cloudflare.com/ajax/libs/videojs-flash/2.1.0/videojs-flash.swf";
         var player = videojs('my-video');
     </script>
+    <script>function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
+      
+      function dismissCookiePopup() {
+        // Set a cookie to remember user's consent for 30 days (you can adjust the number of days)
+        setCookie("cookieConsent", "true", 30);
+        
+        // Hide the cookie popup
+        document.querySelector(".cookie-popup").style.display = "none";
+      }
+      
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            while (cookie.charAt(0) === ' ') {
+                cookie = cookie.substring(1, cookie.length);
+            }
+            if (cookie.indexOf(nameEQ) === 0) {
+                return cookie.substring(nameEQ.length, cookie.length);
+            }
+        }
+        return null;
+      }</script>
 </body>
 
 </html>
