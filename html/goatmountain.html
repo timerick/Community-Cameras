@@ -18,6 +18,47 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    var cookieConsent = getCookie("cookieConsent");
+    if (cookieConsent) {
+      document.addEventListener("DOMContentLoaded", function () {
+        var cookiePopup = document.querySelector(".cookie-popup");
+        cookiePopup.style.display = "none";
+      });
+    }
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        while (cookie.charAt(0) === ' ') {
+          cookie = cookie.substring(1, cookie.length);
+        }
+        if (cookie.indexOf(nameEQ) === 0) {
+          return cookie.substring(nameEQ.length, cookie.length);
+        }
+      }
+      return null;
+    }
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function dismissCookiePopup() {
+      // Set a cookie to remember user's consent for 30 days (you can adjust the number of days)
+      setCookie("cookieConsent", "true", 30);
+
+      // Hide the cookie popup
+      document.querySelector(".cookie-popup").style.display = "none";
+    }
+
+  </script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -110,14 +151,13 @@
       </p>
     </div>
   </div>
-  
+
   <!--Cookie Pop Up-->
   <div class="cookie-popup fixed-bottom bg-dark text-white p-3 text-center">
     This website uses cookies to ensure you get the best experience on our website.
     <button class="btn btn-primary ml-3" onclick="dismissCookiePopup()">Okay</button>
   </div>
-  
-  <script src="scripts.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
