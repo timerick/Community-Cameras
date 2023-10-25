@@ -78,3 +78,29 @@ var videoFrame = document.getElementById('videoFrame');
         };*/
 
 
+function handleVideoPlayback() {
+  // Get the iframe element
+  var iframe = document.getElementById("videoFrame");
+
+  // Access the video element inside the iframe
+  var video = iframe.contentDocument.getElementById("player_html5_api"); // Replace "your-video-element-id" with the actual ID of your video element
+
+  // Function to handle the timer and confirmation dialog
+  function startTimer() {
+    // Set a timeout to display the confirmation dialog after 1 minute (60,000 milliseconds)
+    setTimeout(function () {
+      // Pause the video
+      video.pause();
+
+      // Ask for confirmation
+      var userConfirmation = window.confirm("Are you still watching?");
+
+      // If the user clicks "OK", resume playing the video and start the timer again
+      if (userConfirmation) {
+        video.play();
+        startTimer(); // Start the timer again
+      }
+    }, 60000); // 10000 milliseconds = 1 minute
+  }
+  startTimer();
+}      
