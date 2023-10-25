@@ -46,7 +46,7 @@ videoFrame.onload = function() {
     var iframeDocument = videoFrame.contentDocument || videoFrame.contentWindow.document;
 
     // Set a timeout for 30 minutes (30 minutes * 60 seconds * 1000 milliseconds)
-    var timeoutInMilliseconds = 30 * 60 * 1000;
+    var timeoutInMilliseconds = 1 * 60 * 1000;
     setTimeout(function () {
         // Pause the video inside the iframe
         iframeDocument.postMessage('pause', '*');
