@@ -37,3 +37,29 @@ function dismissCookiePopup() {
   document.querySelector(".cookie-popup").style.display = "none";
 }
 
+// Get the iframe element
+var videoFrame = document.getElementById('videoFrame');
+
+// Wait for the iframe to be completely loaded
+videoFrame.onload = function() {
+    // Get the content document of the iframe
+    var iframeDocument = videoFrame.contentDocument || videoFrame.contentWindow.document;
+
+    // Set a timeout for 30 minutes (30 minutes * 60 seconds * 1000 milliseconds)
+    var timeoutInMilliseconds = 30 * 60 * 1000;
+    setTimeout(function () {
+        // Pause the video inside the iframe
+        iframeDocument.postMessage('pause', '*');
+
+        // Show a popup
+        var isStillWatching = confirm("Are you still watching?");
+        if (isStillWatching) {
+            // Resume the video if the user confirms they are still watching
+            iframeDocument.postMessage('play', '*');
+        } else {
+            // Handle the case where the user chooses not to continue watching
+            // You can perform actions like redirecting to another page or closing the player.
+        }
+    }, timeoutInMilliseconds);
+};
+
