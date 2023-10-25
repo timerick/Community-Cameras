@@ -100,7 +100,7 @@ function handleVideoPlayback() {
         video.play();
         startTimer(); // Start the timer again
       }
-    }, 10000); // 60000 milliseconds = 1 minute
+    }, 150000); // 60000 milliseconds = 1 minute
   }
   startTimer();
 }      
