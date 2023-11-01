@@ -37,47 +37,6 @@ function dismissCookiePopup() {
   document.querySelector(".cookie-popup").style.display = "none";
 }
 
-// Get the iframe element
-var videoFrame = document.getElementById('videoFrame');
-
-// Wait for the iframe to be completely loaded
-/*videoFrame.onload = function() {
-    // Get the content document of the iframe
-    var iframeDocument = videoFrame.contentDocument || videoFrame.contentWindow.document;
-
-    // Set a timeout for 30 minutes (30 minutes * 60 seconds * 1000 milliseconds)
-    var timeoutInMilliseconds = 1 * 60 * 1000;
-    setTimeout(function () {
-        // Pause the video inside the iframe
-        iframeDocument.postMessage('pause', '*');
-
-        // Show a popup
-        var isStillWatching = confirm("Are you still watching?");
-        if (isStillWatching) {
-            // Resume the video if the user confirms they are still watching
-            iframeDocument.postMessage('play', '*');
-        } else {
-            // Handle the case where the user chooses not to continue watching
-            // You can perform actions like redirecting to another page or closing the player.
-        }
-    }, timeoutInMilliseconds);
-};
-
-        // Get the iframe element
-        var iframe = document.getElementById("videoFrame");
-
-        // Wait for the iframe content to load
-        iframe.onload = function() {
-            // Access the video element inside the iframe
-            var video = iframe.contentDocument.getElementById("player_html5_api"); // Replace "your-video-element-id" with the actual ID of your video element
-
-            // Set a timeout to pause the video after 1 minute (60,000 milliseconds)
-            setTimeout(function() {
-                video.pause();
-            }, 10000); // 60000 milliseconds = 1 minute
-        };*/
-
-
 function handleVideoPlayback() {
   // Get the iframe element
   var iframe = document.getElementById("videoFrame");
@@ -100,7 +59,7 @@ function handleVideoPlayback() {
         video.play();
         startTimer(); // Start the timer again
       }
-    }, 150000); // 60000 milliseconds = 1 minute
+    }, 900000); // 60000 milliseconds = 1 minute
   }
   startTimer();
 }      
