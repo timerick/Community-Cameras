@@ -62,4 +62,41 @@ function handleVideoPlayback() {
     }, 900000); // 60000 milliseconds = 1 minute
   }
   startTimer();
-}      
+}   
+
+
+/* document.addEventListener('DOMContentLoaded', function () {
+  const logoContainer = document.getElementById('logo-container');
+
+  // Array of logo ad URLs or paths
+  const logos = [
+      'logo1.png',
+      'logo2.png',
+      'logo3.png',
+      'logo4.png',
+      'logo5.png',
+      'logo6.png',
+      'logo7.png',
+      'logo8.png',
+      'logo9.png',
+      'logo10.png'
+  ];
+
+  // Function to get 4 random, non-duplicate logos
+  function getRandomLogos() {
+      const shuffledLogos = logos.sort(() => 0.5 - Math.random());
+      return shuffledLogos.slice(0, 4);
+  }
+
+  // Display the random logos
+  function displayLogos() {
+      const selectedLogos = getRandomLogos();
+      selectedLogos.forEach(logo => {
+          const img = document.createElement('img');
+          img.src = logo;
+          logoContainer.appendChild(img);
+      });
+  }
+
+  displayLogos();
+}); */
