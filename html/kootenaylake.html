@@ -67,8 +67,8 @@
   <header>
     <div class="container">
       <div class="banner mt-3">
-        <a href="https://www.bigtreeelectrical.com/contact" target="_blank" id="imageLink">
-          <img id="image" src="images/bannerads/BigTreeBannerAd.png" alt="Big Tree Electrical Banner Ad">
+        <a href="https://reconnecttech.ca/internet" target="_blank" id="imageLink">
+          <img id="image" src="images/bannerads/ReConnectInternetBannerAd.png" alt="ReConnect Internet Banner Ad">
         </a>
       </div>
     </div>
@@ -133,9 +133,8 @@
     const imageLink = document.getElementById("imageLink");
     const image = document.getElementById("image");
     const images = [
-      { src: "images/bannerads/BigTreeBannerAd.png", link: "https://www.bigtreeelectrical.com/contact" },
-      { src: "images/bannerads/bannerAd1.png", link: "/support" },
-      { src: "images/bannerads/bannerAd2.png", link: "/support" }
+    { src: "images/bannerads/BigTreeBannerAd.png", link: "https://www.bigtreeelectrical.com/contact" },
+    { src: "images/bannerads/ReConnectInternetBannerAd.png", link: "https://reconnecttech.ca/internet" }  
     ];
     let i = 0;
 
@@ -145,10 +144,9 @@
       i = (i + 1) % images.length;
     }
 
-    setInterval(changeBannerAd, 5000);
+    setInterval(changeBannerAd, 6000);
 
     window.onload = handleVideoPlayback;
-  </script>
   </script>
 </body>
 
