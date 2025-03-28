@@ -64,7 +64,7 @@ function handleVideoPlayback() {
   startTimer();
 }   
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   const logoContainer = document.querySelector(".brand-logos");
   // Add or Remove Logo Ads Here
   if (logoContainer) {
@@ -100,7 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-/* document.addEventListener('DOMContentLoaded', function () {
+
+document.addEventListener('DOMContentLoaded', function () {
   const logoContainer = document.getElementById('logo-container');
 
   // Array of logo ad URLs or paths
