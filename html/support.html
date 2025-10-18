@@ -29,34 +29,31 @@
 </script>
 
 <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #10214d;">
         <div class="container">
-            <a class="navbar-brand" style="color: white" href="/index">Creston Valley Cameras
-            </a>
+            <a class="navbar-brand text-white" href="/index">Creston Valley Cameras</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse  justify-content-end" id="navbarToggler">
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/grainelevators" style="color: #f47b23;"><b>Grain Elevator</b></a>
+                    <li class="nav-item"><a class="nav-link" href="/goatmountain" style="color:#f47b23;"><b>Goat
+                                Mountain</b></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/goatmountain" style="color: #f47b23;"><b>Goat Mountain</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/skimmerhorns" style="color: #f47b23;"><b>Skimmerhorns</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/kootenaylake" style="color: #f47b23;"><b>Kootenay Lake</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/drivebccameras" style="color: #f47b23;"><b>Highway Cameras</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/airport" style="color: #f47b23;"><b>Airport Cameras</b></a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/grainelevators" style="color:#f47b23;"><b>Grain
+                                Elevator</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/skimmerhorns"
+                            style="color:#f47b23;"><b>Skimmerhorns</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/kootenaylake" style="color:#f47b23;"><b>Kootenay
+                                Lake</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/drivebccameras" style="color:#f47b23;"><b>Highway
+                                Cameras</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/airport" style="color:#f47b23;"><b>Airport
+                                Cameras</b></a></li>
                 </ul>
             </div>
         </div>
@@ -133,34 +130,9 @@
             </div>
 
         </div>
-        <!--<div class="container">
-            <br>
-            <h2>Early Adopter Discount!</h2>
-            <p>Take advantage of our early adopter pricing as we introduce new cameras. Lock in your rates by
-                signing up before the camera goes live. Choose month-to-month or yearly support.<br>
-            </p>
-            <div class="row">
-                <div class="col-sm-6">
-                    <h5>Banner Ads</h5>
-                    <p><s>$125/month</s> <b>$100/month</b><br>
-                        <s>$1375/year</s> <b>$1100/year</b><br>
-                        <br>
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <h5>Logo Ads</h5>
-                    <p><s>$25/month</s> <b>$20/month</b><br>
-                        <s>$275/year</s> <b>$220/year</b>
-                    </p>
-                </div>
-            </div>
-            <a href="mailto:contact@reconnecttech.ca"><button id="contactBtnMain"
-                class="btn btn-primary"><b>Contact
-                    Now</b></button></a>
-        </div>-->
-
     </div>
-    <div id="footer" class="text-muted text-center py-3">
+    <!-- Footer -->
+    <footer class="text-muted text-center py-3 mt-4">
         <div class="container">
             <p class="m-0">
                 <a href="/privacypolicy" class="text-muted">Privacy Policy</a> |
@@ -169,17 +141,19 @@
                 &copy; 2023 ReConnect Tech Inc. – All rights reserved.
             </p>
         </div>
-    </div>
-    <!--Cookie Pop Up-->
+    </footer>
+
+    <!-- Cookie Popup -->
     <div class="cookie-popup fixed-bottom bg-dark text-white p-3 text-center">
-        This website uses cookies to ensure you get the best experience on our website.
-        <button class="btn btn-primary ml-3" onclick="dismissCookiePopup()">Okay</button>
+        This website uses cookies to ensure you get the best experience.
+        <button class="btn btn-primary ms-3" onclick="dismissCookiePopup()">Okay</button>
     </div>
 
+    <!-- Scripts -->
     <script src="scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="randomize-logos.js?v=1.0.0" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
