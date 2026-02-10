@@ -1,5 +1,11 @@
 /* styles.css */
 
+:root {
+  --primary-color: #10214d;
+  --accent-color: #f47b23;
+  --text-muted: #6c757d;
+}
+
 body {
   padding-top: 70px;
 }
@@ -10,6 +16,15 @@ body {
 
 .navbar-scrolled {
   background-color: rgba(16, 33, 77, 0.9) !important;
+}
+
+.nav-link-accent {
+  color: var(--accent-color) !important;
+  font-weight: bold;
+}
+
+.nav-link-accent:hover {
+  opacity: 0.8;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -99,8 +114,8 @@ body {
 /* Adjust the number of logos per row based on the screen size */
 @media (min-width: 992px) {
   .brand-logos a {
-    flex-basis: calc(25% - 20PX);
-    max-width: calc(25% - 20PX);
+    flex-basis: calc(25% - 20px);
+    max-width: calc(25% - 20px);
   }
 }
 
