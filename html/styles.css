@@ -111,6 +111,26 @@ body {
   /* Adjust the spacing between images as needed */
 }
 
+/* Camera card styling for symmetry */
+.drive-bc-cameras .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.drive-bc-cameras .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.drive-bc-cameras .card-body {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Adjust the number of logos per row based on the screen size */
 @media (min-width: 992px) {
   .brand-logos a {
