@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
             { link: "https://www.levelupmobilearcade.ca/", img: "images/logoads/LvlUpLogoAd.png", alt: "Level Up Mobile Arcade Logo" },
             { link: "https://www.facebook.com/eb.window.cleaning.2024", img: "images/logoads/EBWindowCleaning.jpg", alt: "EB Window Cleaning" },
             { link: "https://www.lilyandaven.com/", img: "images/logoads/lilyandaven.png", alt: "Lily & Aven" },
-            { link: "https://reconnecttech.ca/internet", img: "images/ReConnectInternet_PrimaryLogo-01.jpg", alt: "ReConnect Tech Inc." }
+            { link: "https://reconnecttech.ca/internet", img: "images/ReConnectInternet_PrimaryLogo-01.jpg", alt: "ReConnect Tech Inc." },
+            { link: "https://hahs.ca/", img: "images/logoads/HAHSLogo.png", alt: "HAHS Logo" }
         ];
         
         // Shuffle the logos using Fisher-Yates algorithm and pick 4
